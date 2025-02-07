@@ -1,16 +1,20 @@
 [
   {
-    "id": 1 /* OK */,
-    "name": "Koenigsegg" /* OK */,
-    "type": "Sport" /* OK */,
-    "pricePerDay": 99.0 /* OK */,
-    "fuel": "90L" /* OK */,
-    "transmission": "Manual" /* OK */,
-    "capacity": "2 People" /* OK */,
-    "rating": 4.8 /* Ok */,
-    "reviewsAmount": 350 /* Ok */,
+    "id": 1,
+    "name": "Koenigsegg",
+    "type": "Sport",
+    "pricePerDay": 99.0,
+    "fuel": "90L",
+    "transmission": "Manual",
+    "capacity": "2 People",
+    "rating": 4.8,
+    "reviewsAmount": 350,
     "description": "A masterpiece of engineering, designed for those who crave adrenaline and exclusivity.",
-    "images": ["koenigsegg_main.png"] /* NOT OK SHOULD INCLDE ARRAY OF PHOTOS */
+    "images": {
+      "main": "koenigsegg_main.png",
+      "interior": "koenigsegg_interior.png",
+      "seats": "koenigsegg_seats.png"
+    }
   },
   {
     "id": 2,
@@ -23,7 +27,11 @@
     "rating": 4.7,
     "reviewCount": 440,
     "description": "NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the race track.",
-    "image": "NissanGTR.png"
+    "images": {
+      "main": "nissan_gtr_main.png",
+      "interior": "nissan_gtr_dashboard.png",
+      "seats": "nissan_gtr_seats.png"
+    }
   },
   {
     "id": 3,
@@ -36,7 +44,11 @@
     "rating": 4.9,
     "reviewCount": 220,
     "description": "A symbol of prestige and luxury, ensuring every drive feels like a royal experience.",
-    "image": "RollsRoys.png"
+    "images": {
+      "main": "rolls_royce_main.png",
+      "interior": "rolls_royce_luxury_dashboard.png",
+      "seats": "rolls_royce_seats.png"
+    }
   },
   {
     "id": 4,
@@ -49,7 +61,11 @@
     "rating": 4.5,
     "reviewCount": 310,
     "description": "Built for the modern traveler, this SUV offers comfort, safety, and the power to explore beyond the city limits.",
-    "image": "AllnewRRush.png"
+    "images": {
+      "main": "all_new_rush_main.png",
+      "interior": "all_new_rush_steering.png",
+      "seats": "all_new_rush_seats.png"
+    }
   },
   {
     "id": 5,
@@ -62,7 +78,11 @@
     "rating": 4.6,
     "reviewCount": 290,
     "description": "A blend of sophistication and utility, ideal for both family road trips and solo adventures.",
-    "image": "CRV.png"
+    "images": {
+      "main": "crv_main.png",
+      "interior": "crv_dashboard.png",
+      "seats": "crv_seats.png"
+    }
   },
   {
     "id": 6,
@@ -75,11 +95,15 @@
     "rating": 4.4,
     "reviewCount": 200,
     "description": "Agile, durable, and designed for any terrain, ensuring smooth drives whether in the city or the wild.",
-    "image": "AllNewTerios.png"
+    "images": {
+      "main": "all_new_terios_main.png",
+      "interior": "all_new_terios_dashboard.png",
+      "seats": "all_new_terios_seats.png"
+    }
   },
   {
     "id": 7,
-    "name": "MG ZX Exclusice",
+    "name": "MG ZX Exclusive",
     "type": "Hatchback",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -88,11 +112,15 @@
     "rating": 4.3,
     "reviewCount": 150,
     "description": "A futuristic hatchback with eco-friendly technology, redefining efficiency and style for city driving.",
-    "image": "MGXExclusice.png"
+    "images": {
+      "main": "mg_zx_exclusive_main.png",
+      "interior": "mg_zx_exclusive_dashboard.png",
+      "seats": "mg_zx_exclusive_seats.png"
+    }
   },
   {
     "id": 8,
-    "name": "New MG ZS",
+    "name": "New MGZS",
     "type": "SUV",
     "pricePerDay": 80.0,
     "fuel": "80L",
@@ -101,7 +129,11 @@
     "rating": 4.5,
     "reviewCount": 220,
     "description": "An electric powerhouse with cutting-edge technology, designed for adventure without emissions.",
-    "image": "NewMGZS.png"
+    "images": {
+      "main": "new_mgzs_main.png",
+      "interior": "new_mgzs_dashboard.png",
+      "seats": "new_mgzs_seats.png"
+    }
   },
   {
     "id": 9,
@@ -114,45 +146,10 @@
     "rating": 4.2,
     "reviewCount": 180,
     "description": "A compact yet dynamic ride, delivering high performance with zero emissions.",
-    "image": "MGZX.png"
-  },
-  {
-    "id": 10,
-    "name": "Lexus ES 350",
-    "type": "Luxury Sedan",
-    "pricePerDay": 110.0,
-    "fuel": "Hybrid 50L",
-    "transmission": "Automatic",
-    "capacity": "5 People",
-    "rating": 4.9,
-    "reviewCount": 420,
-    "description": "An ultra-smooth and fuel-efficient luxury sedan with top-tier safety and comfort.",
-    "image": "lexus.png"
-  },
-  {
-    "id": 11,
-    "name": "Ford Mustang",
-    "type": "Muscle Coupe",
-    "pricePerDay": 95.0,
-    "fuel": "Gasoline 85L",
-    "transmission": "Manual",
-    "capacity": "2 People",
-    "rating": 4.8,
-    "reviewCount": 380,
-    "description": "A legendary muscle car delivering exhilarating speed, power, and classic design.",
-    "image": "fordmustang.png"
-  },
-  {
-    "id": 12,
-    "name": "Toyota Sienna",
-    "type": "Minivan",
-    "pricePerDay": 65.0,
-    "fuel": "Gasoline 70L",
-    "transmission": "Automatic",
-    "capacity": "7 People",
-    "rating": 4.6,
-    "reviewCount": 330,
-    "description": "A spacious and family-friendly minivan with advanced safety and entertainment features.",
-    "image": "sienna.png"
+    "images": {
+      "main": "mg_zx_excite_main.png",
+      "interior": "mg_zx_excite_dashboard.png",
+      "seats": "mg_zx_excite_seats.png"
+    }
   }
 ]
