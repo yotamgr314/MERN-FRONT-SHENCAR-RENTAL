@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# Exclude images from Git tracking
+/frontend/public/assets/images/cars
