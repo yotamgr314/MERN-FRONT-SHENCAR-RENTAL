@@ -3,153 +3,149 @@
     "id": 1,
     "name": "Koenigsegg",
     "type": "Sport",
-    "pricePerDay": 200.0,
-    "fuel": "90L",
+    "pricePerDay": 99,
+    "capacity": 2,
+    "fuelCapacity": 90,
     "transmission": "Manual",
-    "capacity": "2 People",
-    "rating": 4.8,
-    "reviewsAmount": 350,
+    "images": [
+      "images/Koneigsegg.png",
+      "images/interior.png",
+      "images/seats.png"
+    ],
     "description": "An engineering marvel that blends extreme speed with precision handling, making every drive a breathtaking experience.",
-    "images": {
-      "main": "koenigsegg_main.png",
-      "interior": "koenigsegg_interior.png",
-      "seats": "koenigsegg_seats.png"
-    }
+    "rating": 3.8,
+    "reviews": 150
   },
   {
     "id": 2,
-    "name": "Nissan_GT-R",
+    "name": "Nissan GT-R",
     "type": "Sport",
-    "pricePerDay": 95.0,
-    "fuel": "80L",
+    "pricePerDay": 91.02,
+    "capacity": 2,
+    "fuelCapacity": 80,
     "transmission": "Manual",
-    "capacity": "2 People",
-    "rating": 4.5,
-    "reviewCount": 220,
-    "description": "Safety and comfort while driving a futuristic  and elegant sports car.",
-    "images": {
-      "main": "nissan_gtr_main.png",
-      "interior": "nissan_gtr_dashboard.png",
-      "seats": "nissan_gtr_seats.png"
-    }
+    "images": [
+      "images/Nissan-GT-R.png",
+      "images/interior.png",
+      "images/seats.png"
+    ],
+    "description": "A legend born on the track, delivering raw power and aerodynamic excellence for those who demand high performance.",
+    "rating": 4.2,
+    "reviews": 33
   },
   {
     "id": 3,
     "name": "Rolls-Royce",
     "type": "Sport",
-    "pricePerDay": 100.0,
-    "fuel": "70L",
+    "pricePerDay": 92,
+    "capacity": 4,
+    "fuelCapacity": 70,
     "transmission": "Manual",
-    "capacity": "4 People",
-    "rating": 5.9,
-    "reviewCount": 220,
-    "description": "A symbol of prestige and luxury, ensuring every drive feels like a royal experience.",
-    "images": {
-      "main": "rolls_royce_main.png",
-      "interior": "rolls_royce_luxury_dashboard.png",
-      "seats": "rolls_royce_seats.png"
-    }
+    "images": [
+      "images/Rolls-Royce.png",
+      "images/interior.png",
+      "images/seats.png"
+    ],
+    "description": "The pinnacle of luxury and craftsmanship, ensuring an ultra-smooth ride with timeless elegance.",
+    "rating": 5.2,
+    "reviews": 200
   },
   {
     "id": 4,
     "name": "All New Rush",
     "type": "SUV",
-    "pricePerDay": 40.0,
-    "fuel": "70L",
-    "transmission": "Manual",
-    "capacity": "6 People",
-    "rating": 4.5,
-    "reviewCount": 220,
+    "pricePerDay": 188,
+    "capacity": 4,
+    "fuelCapacity": 99,
+    "transmission": "Automatic",
+    "images": [
+      "images/ALL-NEW-RUSH.png",
+      "images/interior.png",
+      "images/seats.png"
+    ],
     "description": "A rugged and spacious SUV designed for families and explorers who crave adventure beyond the cityscape.",
-    "images": {
-      "main": "all_new_rush_main.png",
-      "interior": "all_new_rush_steering.png",
-      "seats": "all_new_rush_seats.png"
-    }
+    "rating": 5.6,
+    "reviews": 120
   },
   {
     "id": 5,
-    "name": "CR - V",
+    "name": "CR-V",
     "type": "SUV",
-    "pricePerDay": 80.0,
-    "fuel": "80L",
+    "pricePerDay": 100,
+    "capacity": 2,
+    "fuelCapacity": 90,
     "transmission": "Manual",
-    "capacity": "6 People",
-    "rating": 3.0,
-    "reviewCount": 290,
+    "images": ["images/CR-V.png", "images/interior.png", "images/seats.png"],
     "description": "A versatile and stylish crossover that offers comfort, efficiency, and ample space for every journey.",
-    "images": {
-      "main": "crv_main.png",
-      "interior": "crv_dashboard.png",
-      "seats": "crv_seats.png"
-    }
+    "rating": 4.6,
+    "reviews": 200
   },
   {
     "id": 6,
     "name": "All New Terios",
     "type": "SUV",
-    "pricePerDay": 74.0,
-    "fuel": "90L",
-    "transmission": "Manual",
-    "capacity": "6 People",
-    "rating": 2.4,
-    "reviewCount": 200,
+    "pricePerDay": 30,
+    "capacity": 3,
+    "fuelCapacity": 60,
+    "transmission": "Automatic",
+    "images": [
+      "images/ALL-NEW-RUSH.png",
+      "images/interior.png",
+      "images/seats.png"
+    ],
     "description": "Built to conquer rough terrains with ease, this SUV is perfect for those who embrace the thrill of off-road exploration.",
-    "images": {
-      "main": "all_new_terios_main.png",
-      "interior": "all_new_terios_dashboard.png",
-      "seats": "all_new_terios_seats.png"
-    }
+    "rating": 3.4,
+    "reviews": 20
   },
   {
     "id": 7,
-    "name": "MG ZX Exclusive",
+    "name": "MGZX Exclusive",
     "type": "Hatchback",
-    "pricePerDay": 220.0,
-    "fuel": "70L",
+    "pricePerDay": 90,
+    "capacity": 6,
+    "fuelCapacity": 130,
     "transmission": "Electric",
-    "capacity": "4 People",
-    "rating": 3.3,
-    "reviewCount": 179,
+    "images": [
+      "images/MGZX-Exclusive.png",
+      "images/interior.png",
+      "images/seats.png"
+    ],
     "description": "A cutting-edge electric hatchback that delivers eco-friendly efficiency without compromising on style and comfort.",
-    "images": {
-      "main": "mg_zx_exclusive_main.png",
-      "interior": "mg_zx_exclusive_dashboard.png",
-      "seats": "mg_zx_exclusive_seats.png"
-    }
+    "rating": 5.2,
+    "reviews": 90
   },
   {
     "id": 8,
     "name": "New MGZS",
     "type": "SUV",
-    "pricePerDay": 80.0,
-    "fuel": "20L",
+    "pricePerDay": 110,
+    "capacity": 6,
+    "fuelCapacity": 60,
     "transmission": "Manual",
-    "capacity": "6 People",
-    "rating": 4.5,
-    "reviewCount": 220,
+    "images": [
+      "images/New-MGZS.png",
+      "images/interior.png",
+      "images/seats.png"
+    ],
     "description": "A smart and connected SUV with intelligent features, redefining the way you experience modern driving.",
-    "images": {
-      "main": "new_mgzs_main.png",
-      "interior": "new_mgzs_dashboard.png",
-      "seats": "new_mgzs_seats.png"
-    }
+    "rating": 5.4,
+    "reviews": 200
   },
   {
     "id": 9,
-    "name": "MG ZX Excite",
+    "name": "MGZX Excite",
     "type": "Hatchback",
-    "pricePerDay": 54.0,
-    "fuel": "90L",
+    "pricePerDay": 200,
+    "capacity": 2,
+    "fuelCapacity": 30,
     "transmission": "Electric",
-    "capacity": "4 People",
-    "rating": 2.2,
-    "reviewCount": 200,
+    "images": [
+      "images/MGZX-Excite.png",
+      "images/interior.png",
+      "images/seats.png"
+    ],
     "description": "A sporty and agile hatchback that combines electric innovation with a fun-to-drive spirit, ideal for city commutes.",
-    "images": {
-      "main": "mg_zx_excite_main.png",
-      "interior": "mg_zx_excite_dashboard.png",
-      "seats": "mg_zx_excite_seats.png"
-    }
+    "rating": 4.5,
+    "reviews": 75
   }
 ]
