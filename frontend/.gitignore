@@ -25,4 +25,3 @@ yarn-error.log*
 
 # Exclude static images from Git tracking
 # Ignore all static images inside public/assets/images
-public/assets/images
