@@ -6,12 +6,15 @@ import { Favorite } from "@mui/icons-material";
 function CarDetailsPage({ favorites, toggleFavorite, carsData }) {
   const { id } = useParams();
   const car = carsData.find((c) => c.id === parseInt(id));
-  const [mainImage, setMainImage] = useState(car.images[0]);
-  const isFavorite = favorites.includes(car.id);
+
+  // ✅ Ensure hook useState is NOT inside a conditional return
+  const [mainImage, setMainImage] = useState(car ? car.images[0] : "");
 
   if (!car) {
     return <div className="error">Car not found</div>;
   }
+
+  const isFavorite = favorites.includes(car.id);
 
   return (
     <div className="car-details-page">
@@ -19,13 +22,9 @@ function CarDetailsPage({ favorites, toggleFavorite, carsData }) {
       <div className="content-container">
         <div className="left-section">
           <div className="main-box">
-            <h2 className="main-title">
-              Sports car with the best design and acceleration
-            </h2>
-            <p className="main-description">
-              Safety and comfort while driving a futuristic and elegant sports
-              car.
-            </p>
+            <h2 className="main-title">{car.name}</h2>
+            <p className="main-description">{car.description}</p>{" "}
+            {/* ✅ Fixed! */}
             <img
               src={"../assets/" + mainImage}
               alt={car.name}
@@ -34,30 +33,23 @@ function CarDetailsPage({ favorites, toggleFavorite, carsData }) {
           </div>
 
           <div className="small-box-container">
-            <div
-              className="firstbox"
-              onClick={() => setMainImage(car.images[0])}
-            >
-              <div className="small-box first">
-                <img
-                  src={"../assets/" + car.images[0]}
-                  alt={car.name}
-                  className="first"
-                />
-              </div>
-            </div>
-
-            {car.images.slice(1).map((image, index) => (
+            {car.images.map((image, index) => (
               <div
                 key={index}
-                className="small-box"
+                className={`small-box ${mainImage === image ? "firstbox" : ""}`} // ✅ Apply firstbox style to selected image
                 onClick={() => setMainImage(image)}
               >
-                <img
-                  src={"../assets/" + image}
-                  alt={`${car.name} ${index + 1}`}
-                  className="thumbnail"
-                />
+                <div
+                  className={`small-box ${mainImage === image ? "first" : ""}`}
+                >
+                  <img
+                    src={"../assets/" + image}
+                    alt={`${car.name} ${index + 1}`}
+                    className={`thumbnail ${
+                      mainImage === image ? "first" : ""
+                    }`} // ✅ Apply first style to selected image
+                  />
+                </div>
               </div>
             ))}
           </div>
@@ -75,9 +67,7 @@ function CarDetailsPage({ favorites, toggleFavorite, carsData }) {
               }}
             />
           </button>
-
           <h2 className="car-name">{car.name}</h2>
-
           <div className="rating">
             {Array.from({ length: 5 }).map((_, index) =>
               index < Math.floor(car.rating) ? (
@@ -100,11 +90,7 @@ function CarDetailsPage({ favorites, toggleFavorite, carsData }) {
             )}
             <span className="reviews">{car.reviews} Reviews</span>
           </div>
-
-          <p className="car-description">
-            {car.description || "Luxury, speed, and power combined."}
-          </p>
-
+          <p className="car-description">{car.description}</p> {/* ✅ Fixed! */}
           <div className="specs">
             <div className="spec-item">
               <span>Type Car:</span> <p>{car.type}</p>
@@ -119,7 +105,6 @@ function CarDetailsPage({ favorites, toggleFavorite, carsData }) {
               <span>Gasoline:</span> <p>{car.fuelCapacity}L</p>
             </div>
           </div>
-
           <div className="price-sectiondet">
             ${car.pricePerDay.toFixed(2)}/day
           </div>

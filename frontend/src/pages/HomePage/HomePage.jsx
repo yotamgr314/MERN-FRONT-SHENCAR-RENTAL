@@ -33,6 +33,7 @@ function HomePage({ cars, favorites, toggleFavorite, filters, searchQuery }) {
         <p>{filteredCars.length} Cars</p>
       </header>
 
+      {/* ✅ שימוש בקומפוננטה החדשה במקום ישירות ב-CarCard */}
       <CarList
         cars={filteredCars}
         favorites={favorites}
