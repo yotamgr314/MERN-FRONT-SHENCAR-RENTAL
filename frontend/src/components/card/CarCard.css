@@ -1,0 +1,150 @@
+.car-card-container {
+  width: 317px;
+  height: 388px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  box-sizing: border-box;
+}
+.price-figure,
+.price-slash {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25.2px;
+  letter-spacing: 0%; /* No letter spacing */
+  color: #1a202c; /* Exact dark color */
+}
+
+.price-term {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17.64px;
+  letter-spacing: 0%;
+  color: #90a3bf; /* Lighter color */
+}
+
+.card-header,
+.vehicle-image,
+.specs-row,
+.card-footer {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.card-header {
+  top: 24px;
+  left: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.title-group {
+  width: 128px;
+}
+
+.car-title {
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0;
+  line-height: 24px;
+}
+
+.car-subtitle {
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  color: #90a3bf;
+  margin: 4px 0 0;
+  line-height: 20px;
+}
+
+.vehicle-image {
+  top: 124px;
+  left: 24px;
+  width: calc(100% - 48px);
+  height: 84px;
+  object-fit: contain;
+}
+
+.specs-row {
+  top: 260px;
+  left: 24px;
+  right: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spec-itemc {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-weight: 500;
+  color: #90a3bf;
+  line-height: 21px;
+  letter-spacing: -0.28px;
+}
+
+.card-footer {
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-section {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.price-figure {
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.price-term {
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-weight: 700;
+  color: #90a3bf;
+}
+
+.rental-button {
+  background: #3563e9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 116px;
+  height: 44px;
+  transition: background 0.3s;
+}
+
+.rental-button:hover {
+  background: #2a4eb2;
+}
+
+.heart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
