@@ -1,0 +1,150 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f6f7f9;
+}
+
+h4 {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15.12px;
+  letter-spacing: -0.02em; /* -2% */
+  color: #90a3bf;
+  width: 178px;
+  height: 20px;
+}
+
+.filter-options.type-options {
+  margin-bottom: 56px;
+}
+
+.filter-options.capacity-options {
+  margin-bottom: 56px;
+}
+
+.filter-options.type-options {
+  margin-bottom: 56px;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-section {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 124px;
+  padding: 0 40px;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  background: var(--Primary-0, #fff);
+  box-sizing: border-box;
+}
+
+.left-sidebar {
+  width: 25%;
+  padding: 32px;
+  border-right: 1px solid #f3f5f7;
+  background: var(--Primary-0, #fff);
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.filter-section {
+  margin-bottom: 56px;
+}
+
+.filter-section h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0; /* ביטול כל מרווח תחתון קודם */
+  color: #596780;
+  text-transform: uppercase;
+}
+
+.filter-options label {
+  font-family: "Plus Jakarta Sans";
+  display: block;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  color: #596780;
+}
+
+.filter-options input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #3a7afe;
+}
+
+.price-slider input[type="range"] {
+  width: 100%;
+  background: #3a7afe;
+  height: 12px;
+  border-radius: 12px;
+  background: var(--Secondary-300, #90a3bf);
+  margin-bottom: 8px;
+}
+
+.price-slider p {
+  font-size: 0.9rem;
+  color: #596780;
+}
+
+@media (max-width: 768px) {
+  .left-sidebar {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .filter-section {
+    margin-bottom: 40px;
+  }
+}
+
+.logo-column {
+  grid-column: 1;
+  padding-right: 450px;
+  min-width: auto;
+  color: rgba(19, 19, 19, 0.6);
+
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+
+.link-button {
+  all: unset;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+.price-slider p {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em; /* 2% מרווח שלילי */
+  text-align: justify;
+  color: #596780;
+}
