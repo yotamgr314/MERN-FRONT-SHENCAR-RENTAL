@@ -1,5 +1,5 @@
 import React from "react";
-import CarList from "../components/carList/CarList";
+import CarList from "../components/CarList/CarList";
 
 function FavoritesPage({ cars, favorites, toggleFavorite }) {
   const favoriteCars = cars.filter((car) => favorites.includes(car.id));

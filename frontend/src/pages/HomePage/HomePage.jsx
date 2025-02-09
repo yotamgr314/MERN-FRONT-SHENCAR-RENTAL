@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CarList from "../../components/carList/CarList";
+import CarList from "../../components/CarList/CarList";
 import "./HomePage.css";
 
 function HomePage({ cars, favorites, toggleFavorite, filters, searchQuery }) {

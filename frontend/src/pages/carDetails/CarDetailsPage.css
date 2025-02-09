@@ -24,7 +24,7 @@
   flex: 1;
   border-radius: 10px;
   background: var(--Primary-500, #3563e9);
-  background-image: url("../../../public/assets/images/Group\ 427320628.png"); /* FIXED PATH */
+  background-image: url("../../../public/assets/images/backGroundCarDetails.png"); /* FIXED PATH */
   padding: 16px;
   text-align: center;
   position: relative;
@@ -90,7 +90,7 @@
   height: 108px;
   flex-shrink: 0;
   background: var(--Primary-500, #3563e9);
-  background-image: url("../../../public/assets/images/bg.png"); /* FIXED PATH */
+  background-image: url("../../../public/assets/images/backGround.png"); /* FIXED PATH */
 }
 
 .small-box img {

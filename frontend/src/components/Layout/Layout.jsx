@@ -1,5 +1,5 @@
 import React from "react";
-import Filters from "../filters/Filters";
+import Filters from "../Filters/Filters";
 import Footer from "../Footer/Footer"; // ✅ Adjusted import
 import NavBar from "../NavBar/NavBar"; // ✅ New import for the extracted NavBar
 import "./Layout.css";

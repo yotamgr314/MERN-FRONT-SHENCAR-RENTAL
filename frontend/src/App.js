@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import FavoritesPage from "./pages/FavoritesPage";
 import CarDetailsPage from "./pages/carDetails/CarDetailsPage";
 import Layout from "./components/Layout/Layout";
-import carsData from "./data/carsData.json";
+import carsData from "./data/shenkarCarData.json";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
