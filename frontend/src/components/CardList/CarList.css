@@ -1,0 +1,13 @@
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+
+.no-cars {
+  color: #596780;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 32px;
+}
